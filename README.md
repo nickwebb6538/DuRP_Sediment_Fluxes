@@ -1,5 +1,5 @@
 # DuRP_Sediment_Fluxes
-This repository contains data collected at the Jornada Experimental Range (JER) Duneland Restoration Project (DuRP) and National Wind Erosion Research Network (NWERN) site and used in the DuRP Sediment Fluxes project.
+This repository contains data collected at the USDA-ARS Jornada Experimental Range (JER) Duneland Restoration Project (DuRP) and National Wind Erosion Research Network (NWERN) site and used in the DuRP Sediment Fluxes project.
 
 # Authors
 
@@ -87,7 +87,29 @@ The following lists provide field definitions for the meteorological, core indic
 •	SenSec - Number of seconds within a logging interval (1 min) that particles were counted.
 
 # metdata_wind.csv 
+•	t	- timestamp for record.
 
+•	u_10 – Wind speed (m/s) at 10 m above ground level (AGL).
+
+•	dir - Wind direction (degrees) at 10 m AGL.
+
+•	u_star - Wind shear velocity (m/s) obtained from Law of the Wall.
+
+•	z_0 - Aerodynamic roughness length (m) obtained from Law of the Wall.
+
+•	u_star_u_h - Normalized shear velocity = u_star / u_10
+
+•	year - Year of sample collection.
+
+•	date - Date of sample collection: mm/dd/yyyy
+
+•	MMDD - Month and day of sample collection.
+
+•	monthofyear - Month in which sample was collected.
+
+•	day - Day of month in which sample was collected
+
+•	season - Seaon of year in which sample was collected. Spring (MAM), summer (JJA), fall (SON), winter (DJF).
 
 # DuRP_NWERN_coremethods_data.csv
 
@@ -167,18 +189,27 @@ the Gap Intercept method (commonly three transects per plot).
 
 # DuRP_NWERN_integrated_fluxes_season.csv
 
-•	Site - Study site name; JER = Jornada Experimental Range.
+•	X - row ID
 
-•	Sampler - Identification of MWAC mast (stack) location within plot; including MWAC masts 1, 2 and 3 in each Cell.
+•	Flux – Vertically-integrated horizontal sediment mass flux (units g/m/d).
 
-•	Cell – Grid cell location within the NWERN site, including cells A, B, C, D, E, F, G, H, I.
+•	Site - Study site name; GRASS = GSH, BOER = HGR, DUNE = SHR, MESIN = SHI.
 
 •	Date – Sediment sample collection date (DD-Mon-YY).
 
-•	LN_Flux – Natural log of the vertically-integrated horizontal sediment mass flux (units g/m/d).
+•	MMDD - Month and day of sample collection.
 
-•	Flux - Vertically-integrated horizontal sediment mass flux (units g/m/d).
+•	group_date - Season and year in which sample was collected.
 
+•	year - Year in which sample was collected.
+
+•	monthofyear - Month of year in which sample was collected.
+
+•	dayofyear - Julian day of year in which sample was collected.
+
+•	day - Day of year in which sample was collected
+
+•	Primarykey - Unique identifier of data used in the Landscape Data Commons - https://landscapedatacommons.org 
 
 # References
 
